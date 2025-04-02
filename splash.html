@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>MetaLux</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .circle {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      animation: pulse 2s infinite;
+    }
+    .text {
+      margin-top: 20px;
+      opacity: 0.3;
+      font-size: 14px;
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(0.9);
+        opacity: 0.5;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(0.9);
+        opacity: 0.5;
+      }
+    }
+  </style>
+</head>
+<body onclick="abrirApp()">
+  <div class="circle"></div>
+  <div class="text">Toque o símbolo</div>
+  <script>
+    function abrirApp() {
+      window.location.href = "MetaLux_UI_FINAL_V17_TOTAL_OK.html";
+    }
+  </script>
+</body>
+</html>
